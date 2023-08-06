@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.text-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.one-line {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #343a40;
+  letter-spacing: 1px;
+  animation: move-rtl 8s linear infinite;
+}
+
+@keyframes move-rtl {
+  0% {
+    transform: translateX(0vw);
+  }
+
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .one-line {
+    font-size: 16px;
+  }
+}
